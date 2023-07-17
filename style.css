@@ -1,0 +1,38 @@
+.dog-image {
+    padding-top: 20%;
+    width: 22%;
+}
+.cat-image {
+    padding-top: 20%;
+    width: 11%;
+}
+.mouse-image {
+    padding-top: 20%;
+    width: 4%;
+}
+.birds-image {
+    padding-top: 1%;
+    width: 12%;
+}
+body {
+    background-image: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.dog-image,
+.cat-image,
+.mouse-image,
+.birds-image {
+    animation: bounce 2s ease-in-out infinite;
+}
